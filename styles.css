@@ -1,0 +1,153 @@
+﻿body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #202020;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #76c7c0;
+}
+
+header p {
+  margin-top: 0.5rem;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.plans-section {
+  padding: 2rem 1rem;
+  background: #181818;
+}
+
+.plans-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #58e0b1;
+  font-size: 1.8rem;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.plan {
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 280px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.plan:hover {
+  transform: scale(1.03);
+  background-color: #343434;
+}
+
+.plan h3 {
+  margin: 0 0 0.5rem 0;
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+.plan p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.buy-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #58e0b1;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.buy-btn:hover {
+  background-color: #00b98b;
+}
+
+.highlight {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 🔄 RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .plans-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .highlight {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .buy-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .plan h3 {
+    font-size: 1.1rem;
+  }
+
+  .plan p {
+    font-size: 0.9rem;
+  }
+
+  .buy-btn {
+    font-size: 0.9rem;
+  }
+}
